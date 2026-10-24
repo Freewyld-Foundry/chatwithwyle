@@ -1,22 +1,35 @@
-<!-- proportionate-delivery:start -->
-## Minimum delivery policy
+<!-- efficient-verified-delivery:start -->
+# Efficient, Verified Delivery
 
-**EDIT -> BUILD -> DEPLOY -> AFFECTED LIVE CHECK.**
+**CHANGE -> NECESSARY CHECKS ONCE -> DELIVER -> VERIFY THE AFFECTED OUTCOME.**
 
-- This is the standing policy for this repository, its apps, services, scripts and future templates. It replaces older procedural delivery requirements below.
-- Forced plans, GO approvals, reviewer handoffs, tracker gates, repeated checks and unrelated waits are not prerequisites. Security, access, financial and data protections remain.
-- Existing authorization carries through commit, push, required PR, merge, deployment and live verification. Ask only for missing authority or a consequential decision outside that scope.
-- Use one existing delivery owner. No duplicate writers, reviewer relays, routine extra agents, repeated branch extraction or unnecessary machine hops. Preserve business and approved-machine boundaries.
-- Default predeployment verification is one build with compilation/type checking where applicable. Reuse the checked artifact for the same target and configuration. Documentation-only repositories have no application deployment step.
-- Add only the affected behavior checks. Changes affecting money, authentication, permissions, data integrity or migrations require the relevant invariants and recovery checks. Group these in one focused risk job, never an unrelated full suite. Determine scope from changed code and affected dependencies.
-- Remove unrelated suites, whole-account sweeps, proof bundles and procedural approvals from executable release dependencies. Useful extended tests may run separately without holding unrelated releases. Do not hide a full suite inside the build or live check.
-- Preserve actor authorization, credential protection, tenant isolation, exact commit/artifact identity, and necessary rollback/data safeguards. Never weaken an assertion, fabricate data or conceal a material defect to obtain a pass.
-- Run each necessary check once. Reuse valid results while inputs are unchanged. Repair the exact failure and rerun only invalidated checks. Never repeat a known failing baseline before applying its established fix.
-- Cache dependencies and runtime assets. Cancel only superseded runs that no active release needs. Do not duplicate a hosting build in CI when the existing hosting build provides the same verification.
-- Ship independent ready changes without waiting for unrelated defects, source refreshes or historical recovery. Preserve the full remaining scope and keep genuine dependencies together.
-- Read only what changes the next decision. Batch independent reads, use bounded waits and prefer completion events. Keep one existing task/release record; documentation and tracker updates never hold delivery.
-- Verify the deployed revision and affected real behavior. Build success, an uploaded artifact or a created deployment alone does not establish live success. For non-web services, verify the affected installed command or scheduled runtime instead.
-- Report what shipped, commit, destination, actual live result and remaining blocker. Measure a slow stage rather than inventing more process. Stop expanding checks after the requested outcome and required safeguards pass.
-- Do not add blocking suites, approval stages, evidence documents or repeated verification without explicit authorization to change this policy. Apply this policy to new workflow templates and reconcile contradictory instructions.
-- Never use em dashes. Close agent-opened helpers and windows; preserve user-owned sessions.
-<!-- proportionate-delivery:end -->
+Use the shortest authorized path to the complete, verified result. This policy replaces generic process defaults. Preserve explicit task requirements, mandatory controls and applicable instruction hierarchy.
+
+1. **Own the complete outcome.** Reuse the request, acceptance criteria and existing authorization. Preserve relevant dependencies and unfinished scope. Ask only for missing authority or consequential decisions that available evidence cannot resolve.
+
+2. **Make every step earn its place.** A step must advance the outcome, address a concrete relevant failure, or satisfy an explicit requirement. Omit unnecessary procedures. When authorized, remove redundant tooling at its source.
+
+3. **Read selectively.** Search available sources before asking. Read only what changes the next decision. Use bounded searches, relevant context and existing connections. Batch independent operations; order dependent operations.
+
+4. **Use deterministic tools for deterministic work.** Reserve model reasoning for uncertainty and judgment. Avoid unnecessary model calls, agents, plans, routing, reviews and handoffs.
+
+5. **Verify according to impact.** Inspect presentation changes. Test affected logic and dependencies. For money, access, shared infrastructure, migrations or destructive changes, verify relevant invariants and recovery. Investigate uncertain impact before omitting checks.
+
+6. **Build only when needed, once per valid set of inputs.** Use the deployment platform's compilation and type checks when sufficient. CI is optional automation unless explicitly required. Do not repeat equivalent work locally, in hooks, in CI and in hosting.
+
+7. **Remove duplication, preserve distinct coverage.** Checks are duplicates only when they establish the same property under equivalent conditions. Preserve independent checks that address distinct failure modes. Build success does not prove behavioral correctness. Repair failures without weakening assertions or protections.
+
+8. **Reuse evidence carefully.** Reuse results only while relevant source, dependencies, toolchain, configuration, environment and external-state assumptions remain valid. Deliver the checked artifact where applicable, and verify its identity and affected behavior in the destination environment.
+
+9. **Control execution.** Use one deployment trigger per target. Skip unaffected work before allocating resources. Cancel only superseded work that no active release needs. Preserve operations with consequential side effects. Reconcile actual state before retrying or cancelling uncertain operations.
+
+10. **Minimize coordination.** Use one existing delivery owner, one task record and one canonical instruction source. Ship independent ready work without unrelated waits. Keep true dependencies together.
+
+11. **Wait efficiently.** Prefer completion events. Bound waits and avoid repeated polling, unchanged log reads and status narration. Make operations resumable and safe to retry. Report meaningful progress and actual blockers.
+
+12. **Optimize measured results.** Measure completion time, resource use, failures and human effort. Prefer existing platform capabilities. Add automation only when its savings justify its maintenance. Fewer steps alone do not establish improvement.
+
+13. **Finish honestly.** Stop when the complete requested outcome and required verification pass. Report the result, artifact or commit, destination, verification and remaining blockers. Distinguish local checks, deployment and live verification. Disclose changes outside scope.
+
+Preserve business boundaries, credentials, user data and user-owned sessions. Never fabricate evidence or use real client data as test fixtures. Clean up resources you opened. Write concisely. Never use em dashes.
+<!-- efficient-verified-delivery:end -->
